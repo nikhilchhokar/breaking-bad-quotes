@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>BB Quote</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+</head>
+
+<body>
+  <h1>GENERATE A RANDOM BREAKING BAD QUOTE</h1>
+  <button class="breaking-bad-button" id="reloadButton">New Quote</button>
+  <div class="card
+  <% if (user === 'Walter White') { %>
+    walter-white
+  <% } else if (user === 'Mike Ehrmantraut') { %>
+    mike-ehrmantraut
+  <% } else if (user === 'Jesse Pinkman') { %>
+    jesse-pinkman
+  <% } else if (user === 'Gustavo Fring') { %>
+    Gustavo-fring
+  <% } else if (user === 'Saul Goodman') {%>
+    saul-goodman
+  <% } else if (user === 'Hank Schrader') {%>
+    hank-schrad
+  <% } else { %>
+    default-image
+  <% }  %> 
+  ">
+    <p>
+      <%= secret%>
+
+    </p>
+  </div>
+  <div class="user">
+    <p>
+      <%= user %>
+    </p>
+  </div>
+
+  <script>
+    const reloadButton = document.getElementById('reloadButton'); // Add an event listener to the button 
+    reloadButton.addEventListener('click', () => { // Reload the page
+      location.reload(); });
+  </script>
+</body>
+
+</html>
